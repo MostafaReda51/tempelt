@@ -1,0 +1,164 @@
+:root {
+    --main-color: #e65f78;
+}
+
+a {
+    all: unset;
+    cursor: pointer;   
+}
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+    
+}
+.nav-link:hover{
+    color: var(--main-color);
+ 
+}
+/* star header */
+#home{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+}
+.home-cotent p{
+    color:rgba(255, 255, 255, 0.75);
+}
+.download-btn{
+    padding: 15px 30px;
+    border: solid 1px white;
+    transition: background-color 1s;
+}
+.download-btn:hover{
+    background-color: white;
+    color: black;
+}
+.sittingicon{
+     top:30%;
+     border-radius: 0 5px 5px 0;
+}
+.mouse{
+    display: inline-block;
+    border: solid 1px white;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+     left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite ;
+}
+.mouse::after{
+    content: "";
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+@keyframes updown {
+    0%{bottom:30px;}
+    50%{bottom:60px;}
+    100%{bottom:30px;}
+}
+.up-icon{
+    background-color: var(--main-color);
+    color: white;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    border-radius: 5px;
+}
+.home-cotent h1::after{
+    content: "|";
+    animation: typing 2s linear infinite ;
+}
+@keyframes typing {
+    0%{content: "D |";}
+    5%{content: "De |";}
+    10%{content: "Des |";}
+    15%{content: "Desi |";}
+    15%{content: "Desig |";}
+    20%{content: "Design |";}
+    25%{content: "Designe |";}
+    30%{content: "Designer |";}
+    35%{content: "Designe |";}
+    40%{content: "Design |";}
+    45%{content: "Desig |";}
+    50%{content: "Desi |";}
+    55%{content: "Des |";}
+    60%{content: "De |";}
+    65%{content: "D |";}
+    70%{content: " |";}
+}
+.servies-item{
+    border: 1px solid #e8e8e8;
+    border-radius:5px ;
+    
+}
+.servies-item i{
+    color: var(--main-color);
+}
+.servies-item h5::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+.servies-item:hover h5::after{
+    width: 100px;
+}
+.carousel-item i{
+    color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 4px;
+    border: solid 1px var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+.carousel-indicators [data-bs-target].active{
+    width: 20px;
+    height: 7px;
+}
+.work-item .layer
+{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.work-item:hover .layer
+{
+    opacity: 1;
+}
+.work-item:hover .work-text
+{
+    top: 0 !important;
+}
+.work-item .work-text
+{
+    transition:top 1s ;
+}
+.work-item:hover img 
+{
+    transform: scale(1.1);
+}
+.work-item img 
+{
+    transition: transform 1s;
+}
+.nav-pills .nav-link.active{
+    background-color: var(--main-color);
+}
+.nav-pills .nav-link{
+   color:black;
+}
+.nav-pills .nav-link:hover{
+   color:white;
+   background-color: var(--main-color);
+}
